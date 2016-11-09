@@ -1,0 +1,25 @@
+<html> <!--This defines the document type of the page as HTML-->
+<body> <!--This tag opens the body of the webpage-->
+
+<p>  <!-- This line opens a paragraph -->
+<img id="myImage" src="tl-red.jpg" style="height:320px width:151px"> 
+    <!-- This line inserts the image "tl-red.jpg". It has the ID "myImage" and dimentions of 320x141 px-->
+</p> <!-- This line closes the paragraph-->
+<script> // This line opens a script on the webpage
+var imageIndex = 1; // This line defines the variable "imageIndex" and sets it to the value 1 
+var imageArray = ["tl-red.jpg","tl-red-amb.jpg","tl-gr.jpg","tl-amb.jpg",];
+// this line defines the variable "imageArray" and sets it to the array of traffic light assets 
+
+function changeImage() {  // This line defines the function "changeImage"
+myImage.setAttribute("src",imageArray[imageIndex]);
+// This line sets the HTML with the ID "myImage" to the variable "imageArray"
+imageIndex = (imageIndex + 1) % imageArray.length; 
+// This line sets the variable "imageIndex" to "imageIndex" plus 1
+if (imageIndex == 4) {imageIndex = 0;}
+// This line sets the variable "imageIndex" to 0 if the value is 4 
+} // This line closes the function 
+setInterval(changeImage, 1000); 
+// This line runs the "changeImage" function every 1000 milliseconds
+</script> <!-- This line closes the script on the webpage -->
+</body> <!-- This line closes the body tag of the webpage -->
+</html> <!-- This line closes the HTML tag of the webpage -->

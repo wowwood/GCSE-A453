@@ -1,0 +1,22 @@
+<!DOCTYPE html> <!--This defines the document type of the page as HTML-->
+<html> <!--This tag opens the webpage-->
+<body> <!--This tag opens the body of the webpage-->
+<h1>Change an HTML element</h1> <!--This line defines the first header of the page-->
+<p id="msg">Now you see me.</p> 
+<!--This line defines a paragraph with the id of "msg" with the text "Now you see me."-->
+<button type="button"
+onclick="document.getElementById('msg').innerHTML = 'Gone!'"> 
+Click Me!</button> 
+<!-- this tag defines a button with the type "button". 
+When the is clicked (defined by onclick parameter) it finds the HTML element with the ID "msg".
+It then changes this element's content to "Gone!"
+The button has the text "Click Me"-->
+<button type="button"
+onclick="document.getElementById('msg').innerHTML = 'Back again!'">
+Bring me back!</button>
+<!-- this tag defines a button with the type "button". 
+When the is clicked (defined by onclick parameter) it finds the HTML element with the ID "msg".
+It then changes this element's content to "Back again!"
+The button has the text "Bring me back!"-->
+</body> <!-- this closes the body tag-->
+</html> <!-- this closes the html tag-->

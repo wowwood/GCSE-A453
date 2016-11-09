@@ -1,0 +1,27 @@
+<html><!--This defines the document type of the page as HTML-->
+<body><!--This tag opens the body of the webpage-->
+
+<button onclick="sortnum()">sort</button>
+<!-- This line defines a button that runs the function "sortnum" when it is clicked-->
+
+<p id="list"></p> <!-- This line defines a paragraph with the ID "list" -->
+<p id="number"></p> <!-- This line defines a paragraph with the ID "list" -->
+
+<script> <!-- This line opens a script on the webpage -->
+var tech = ["Printer", "Tablet", "Router", "Mouse", "Monitor", "Keyboard"];
+<script> // This line opens a script on the webpage 
+var tech = ["Printer", "Tablet", "Router", "Mouse", "Monitor", "Keyboard"];
+// this line defines the variable "tech" and sets it to the array of technology items 
+document.getElementById("list").innerHTML = tech;
+// this line finds the element with the ID "list" and changes it to the varaible "tech" 
+
+function sortnum() { //This line defines the function "sortnum"
+    tech.sort(); // This line sorts the variable "tech" in alphabetical order 
+    document.getElementById("list").innerHTML = tech; // This line finds the element with the ID of "list" and changes it to the variable "tech" 
+    technum = tech.length; // This line defines the variable "technum". The value is the number of items in the variable "tech" 
+    document.getElementById("number").innerHTML = technum; //This line finds the element with the ID of "number" and changes it to the variable "technum" 
+} // This line closes the function 
+</script> <!-- this line closes the script on the webpage -->
+
+</body> <!-- This tag closes the body of the webpage -->
+</html> <!-- This tag closes the webpage -->
